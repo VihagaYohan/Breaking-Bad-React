@@ -4,8 +4,8 @@ import axios from "axios";
 
 // components
 import Header from "./components/ui/Header";
-import logo from "./img/logo.png";
 import CharacterGrid from "./components/character/CharacterGrid";
+import logo from "./img/logo.png";
 
 import "./App.css";
 
@@ -29,6 +29,7 @@ const App = () => {
   return (
     <div className="container">
       <Header />
+      <CharacterGrid isLoading={isLoading} items={items} />
     </div>
   );
 };

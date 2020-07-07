@@ -1,13 +1,19 @@
-import React from 'react'
+import React from "react";
 
-import logo from '../../img/logo.png'
+import CharacterItem from "./CharacterItem";
+import logo from "../../img/logo.png";
 
-const CharacterGrid = () => {
-    return (
-        <div style={{width:500,height:500, background:'#fff'}}>
-            <img src={logo} alt=''/>
-        </div>
-    )
-}
+const CharacterGrid = ({ isLoading, items }) => {
+  return isLoading ? (
+    <h1>Loading...!</h1>
+  ) : (
+    <section className="cards">
+      {items.map((item) => <CharacterItem 
+      key={item.char_id}
+      item={item}/>)}
 
-export default CharacterGrid
+    </section>
+  );
+};
+
+export default CharacterGrid;
