@@ -2,7 +2,6 @@ import React from "react";
 
 import Spinner from "../ui/Spinner";
 import CharacterItem from "./CharacterItem";
-import logo from "../../img/logo.png";
 
 const CharacterGrid = ({ isLoading, items }) => {
   return isLoading ? (
