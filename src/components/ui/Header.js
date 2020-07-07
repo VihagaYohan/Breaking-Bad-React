@@ -1,12 +1,13 @@
-import React from "react";
-import logo from "../../img/logo.png";
+import React from 'react'
+
+import logo from '../../img/logo.png'
 
 const Header = () => {
   return (
-    <Header>
-      <img src={logo} alt="" />
-    </Header>
-  );
-};
+    <header className='center'>
+      <img src={logo} alt='logo'/>
+    </header>
+  )
+}
 
-export default Header;
+export default Header
