@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-const Search = ({getQuery}) => {
+const Search = ({ getQuery }) => {
   const [text, setText] = useState("");
 
-  onChange=(q)=>{
+  const onChange = (q) => {
     setText(q);
-    getQuery(q)
-  }
+    getQuery(q);
+  };
 
   return (
     <section className="search">
